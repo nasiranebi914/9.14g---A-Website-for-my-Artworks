@@ -1,0 +1,22 @@
+.about__me{
+    display: flex;
+}
+.aboutme__left{
+    display: flex;
+    margin-right: 4%;
+}
+.aboutme__right{
+    margin-top: 20%;
+}
+.me__1{
+    height: 381px;
+    margin-right: 2%;
+    margin-top: 3.5%;
+}
+.me__2{
+    height: 359px;
+    margin-top: 20%;
+}
+.aboutme__title{
+    height: 60px;
+}

@@ -1,0 +1,13 @@
+.app__content{
+    justify-content: center;
+    display: flex;
+  }
+  .cover_img{
+    height: 570px;
+    padding-right: 5%;
+  }
+  .title_img{
+    height: 270px;
+    padding-right: 5%;
+    padding-top: 10%;
+  }

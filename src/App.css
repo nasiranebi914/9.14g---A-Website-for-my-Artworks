@@ -1,0 +1,26 @@
+.app{
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.app__menu{
+  height: 40px;
+  margin: 1.2%;
+  padding-bottom: 1.5%;
+  display: flex;
+  justify-content: space-between;
+  
+  position: sticky;
+}
+a:link{
+  color: #5e5343;
+  text-decoration: none;
+}
+a:visited{
+  color: #5e5343;
+}
+a:active{
+  text-decoration: underline;
+}
+
+
