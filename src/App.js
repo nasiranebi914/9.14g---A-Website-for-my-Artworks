@@ -2,10 +2,10 @@ import React from 'react'
 import './App.css';
 import {
   BrowserRouter as Router,
-  Switch,
+  Routes,
   Route,
   Link,
-  Redirect,
+  Navigate,
 } from "react-router-dom";
 import Button from '@mui/material/Button';
 import GalleryII from './GalleryII';
@@ -29,29 +29,15 @@ function App() {
         
         </div>
 
-        <Switch>
-          <Route exact path="/">
-            <Redirect to="/HOME" />
-          </Route>
-          <Route path="/HOME" component={Home}>
-            <Home />
-          </Route>
-          <Route path="/AboutMe" component={AboutMe}>
-            <AboutMe />
-          </Route>
-          <Route path="/GalleryI">
-            <GalleryI />
-          </Route>
-          <Route path="/GalleryII">
-            <GalleryII />
-          </Route>
-          <Route path="/GalleryIII">
-            <GalleryIII />
-          </Route>
-          <Route path="/Contact">
-            <Contact />
-          </Route>
-        </Switch>
+        <Routes>
+          <Route exact path="/" element={<Navigate to="/HOME" />} />
+          <Route path="/HOME" element={<Home />} />
+          <Route path="/AboutMe" element={<AboutMe />} />
+          <Route path="/GalleryI" element={<GalleryI />} />
+          <Route path="/GalleryII" element={<GalleryII />} />
+          <Route path="/GalleryIII" element={<GalleryIII />} />
+          <Route path="/Contact" element={<Contact />} />
+          </Routes>
       </Router>
       <div className='app_menu'>
       </div>
