@@ -12,8 +12,8 @@ import GalleryII from './GalleryII';
 import GalleryIII from './GalleryIII';
 import GalleryI from './GalleryI';
 import AboutMe from './AboutMe';
-import Contact from './Contact';
 import Home from './Home';
+
 
 function App() {
   return (
@@ -25,7 +25,6 @@ function App() {
            <Button href="/GalleryI">Painting</Button>
            <Button href="/GalleryII">Drawing</Button>
            <Button href="/GalleryIII">Digital Art</Button>
-           <Button href="/Contact">Contact</Button>
         
         </div>
 
@@ -36,11 +35,8 @@ function App() {
           <Route path="/GalleryI" element={<GalleryI />} />
           <Route path="/GalleryII" element={<GalleryII />} />
           <Route path="/GalleryIII" element={<GalleryIII />} />
-          <Route path="/Contact" element={<Contact />} />
           </Routes>
       </Router>
-      <div className='app_menu'>
-      </div>
       
       
       

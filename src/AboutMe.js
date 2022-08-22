@@ -13,7 +13,8 @@ function AboutMe() {
        </div>
        <div className='aboutme__right'>
         <img alt="" src={AboutMeTitle} className="aboutme__title"></img>
-        <p>I have enjoyed creating art works since I was a little girl. This is a healing process for me to be in my own world and spread my feelings.</p>
+        <p>I have enjoyed creating art works since I was a little girl</p>
+        <p>This is a healing process for me to be in my own world and spread my feelings</p>
        </div>
       
     </div>

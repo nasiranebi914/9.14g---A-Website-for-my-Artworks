@@ -1,4 +1,9 @@
 .galleryI{
-    margin-left: 170px;
+    padding-left: 5%;
     margin-top: 3%;
+}
+
+.im{
+    width: 600px;
+    border-radius: 5px;
 }

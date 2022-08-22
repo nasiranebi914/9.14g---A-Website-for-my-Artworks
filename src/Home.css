@@ -1,13 +1,16 @@
 .app__content{
-    justify-content: center;
+    justify-content:space-evenly;
     display: flex;
+    
   }
   .cover_img{
-    height: 570px;
-    padding-right: 5%;
+    height: 600px;
+    padding-right: 3%;
+    padding-left: 15%;
   }
   .title_img{
     height: 270px;
-    padding-right: 5%;
-    padding-top: 10%;
+    padding-right: 15%;
+    padding-top: 15%;
   }
+

@@ -16,9 +16,17 @@ const images = importAll(require.context('./arts/drawings', false, /\.(png|jpe?g
 
 function GalleryII() {
   const itemData = [
+    {
+        img: images['drawings_2.jpeg'],
+        title: '2',
+      },
       {
-        img: images['drawings_1.jpeg'],
-        title: '1',
+        img: images['drawings_4.jpeg'],
+        title: '4',
+      },
+      {
+        img: images['drawings_10.jpeg'],
+        title: '10',
       },
       {
         img: images['drawings_6.jpeg'],
@@ -50,29 +58,23 @@ function GalleryII() {
         img: images['drawings_3.jpeg'],
         title: '3',
       },
-      {
-        img: images['drawings_4.jpeg'],
-        title: '4',
-      },
-      {
-        img: images['drawings_2.jpeg'],
-        title: '2',
-      },
+      
+      
       {
         img: images['drawings_7.jpeg'],
         title: '7',
       },
  
       {
-        img: images['drawings_10.jpeg'],
-        title: '10',
+        img: images['drawings_1.jpeg'],
+        title: '1',
       },
     
   ]
   return (
     <div className='galleryII'>
-      <Box sx={{ width: 1200}}>
-            <ImageList variant="masonry" cols={2} gap={100}>
+      <Box sx={{ width: '100%'}}>
+      <ImageList variant="quilted" cols={2} gap={10}   sx={{ width: '100%', height: '100%' }} >
               {itemData.map((item) => (
                 <ImageListItem key={item.img}>
                   <Zoom>
@@ -81,6 +83,7 @@ function GalleryII() {
                       srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
                       alt={item.title}
                       loading="lazy"
+                      className='im'
                     />
           </Zoom>
                   

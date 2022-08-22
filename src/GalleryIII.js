@@ -21,8 +21,8 @@ function GalleryIII() {
       title: '3',
     },
     {
-      img: images['digital_1.jpeg'],
-      title: '1',
+      img: images['digital_9.jpeg'],
+      title: '9',
     },
     {
       img: images['digital_11.jpeg'],
@@ -52,8 +52,8 @@ function GalleryIII() {
       title: '8',
     },
     {
-      img: images['digital_9.jpeg'],
-      title: '9',
+      img: images['digital_1.jpeg'],
+      title: '1',
     },
     {
       img: images['digital_10.jpeg'],
@@ -155,8 +155,8 @@ function GalleryIII() {
   ]
   return (
     <div className='galleryIII'>
-      <Box sx={{ width: 1200}}>
-    <ImageList variant="masonry" cols={2} gap={30}>
+      <Box sx={{ width: '100%'}}>
+      <ImageList variant="quilted" cols={2} gap={10}   sx={{ width: '100%', height: '100%' }} >
       {itemData.map((item) => (
         <ImageListItem key={item.img}>
           <Zoom>
@@ -165,6 +165,7 @@ function GalleryIII() {
               srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
               alt={item.title}
               loading="lazy"
+              className='im'
             />
   </Zoom>
           
